@@ -1,0 +1,59 @@
+.card {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    height: 350px;
+    margin:50px;
+    position: relative;
+    width: 400px;
+    &-close {
+        color: $secondary;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    &-left, &-right {
+        display: flex;
+        height: inherit;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-left {
+        align-items: center;
+        background: $secondary;
+        border-radius: 15px 0 0 15px;
+        flex: 1;
+        h4 {
+            color: $ternary;
+        }
+        &-circle {
+            background: $primary;
+            border-radius: 50%;
+            height: 50px;
+            margin-top: 5px;
+            overflow: hidden;
+            width: 50px;
+            img {
+                width: inherit;
+            }
+        }
+    }
+    &-right {
+        background: $primary;
+        border-radius: 0 15px 15px 0;
+        flex: 2;
+        padding: 0 15px 0 30px;
+        h3 {
+            color: $white;
+            font-size: 20px; 
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        p {
+            color: $white;
+        }
+    }
+    
+}
